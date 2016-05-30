@@ -1,0 +1,100 @@
+/*css de colaboradores*/
+/* #333333 */
+#colab{
+	.auspiciadores{
+		text-align: center;
+	}
+	.img-colab{
+		margin: 16%;
+		&:hover{
+			margin: 10%;
+		}
+		img{
+			@include imag-colab;
+		}
+	}
+	.img-colab-lb{
+		margin-top: 10%;
+	    margin-left: -20%;
+	    padding: 6%;
+	    &:hover{
+			padding: 0%;
+		}
+		img{
+			@include imag-colab;
+		}
+	}
+	.img-colab-if{
+		margin-top: 33%;
+		padding: 5%;
+		&:hover{
+			padding: 0%;
+		}
+		img{
+			@include imag-colab;
+		}
+	}
+	.img-colab-gl{
+	    margin-left: 27%;
+    	margin-top: -17%;
+    	padding: 5%;
+    	&:hover{
+			padding: 3%;
+		}
+		img{
+			width: 50%;
+			height: 10%;
+		}
+	}
+}
+/*fin colaboradores*/
+/*inicio css footer*/
+footer{
+	background-color: #333333;
+	.nosotros-footer{
+		padding: 10%;
+		margin-top: 10%;
+		h4{
+			color:white;
+			font-size: 25px;
+			margin:10%;
+		}
+		.parra{
+			color:white;
+			font-size: 15px;
+		}
+	}
+	.lado-oscuro{
+		padding: 2%;
+		img{
+			width: 50%;
+			height: 190px;
+		}	
+		p{
+			@include lado;
+			color:white;
+		}
+	}
+	hr{
+		color:gray;
+	}
+	.redes{
+		text-align: center;
+		.face{
+			@include lado;
+			@include colores-iconos (#004cb9);
+		}
+		.twitter{
+			@include lado;
+			@include colores-iconos(#55b1dd);
+		}
+		.insta{
+			@include lado;
+			@include colores-iconos (#b35d8c);
+		}
+		.in{
+			@include lado;
+			@include colores-iconos (#4190de);
+		}
+	}
+}
