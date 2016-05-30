@@ -116,37 +116,37 @@
 #colab .auspiciadores {
   text-align: center; }
 #colab .img-colab {
-  margin: 16%; }
+  margin-top: 40%;
+  padding: 5%; }
   #colab .img-colab:hover {
-    margin: 10%; }
+    padding: 0%; }
   #colab .img-colab img {
     width: 100%;
     height: 10%; }
 #colab .img-colab-lb {
-  margin-top: 10%;
-  margin-left: -20%;
-  padding: 6%; }
+  margin-top: 5%;
+  padding: 5%; }
   #colab .img-colab-lb:hover {
     padding: 0%; }
   #colab .img-colab-lb img {
     width: 100%;
     height: 10%; }
 #colab .img-colab-if {
-  margin-top: 33%;
-  padding: 5%; }
+  margin-bottom: 12%;
+  padding: 7%; }
   #colab .img-colab-if:hover {
-    padding: 0%; }
+    padding: 4%;
+    margin-bottom: 12%; }
   #colab .img-colab-if img {
     width: 100%;
     height: 10%; }
 #colab .img-colab-gl {
-  margin-left: 27%;
-  margin-top: -17%;
-  padding: 5%; }
+  margin-top: 70%;
+  padding: 2%; }
   #colab .img-colab-gl:hover {
-    padding: 3%; }
+    padding: 0%; }
   #colab .img-colab-gl img {
-    width: 50%;
+    width: 100%;
     height: 10%; }
 
 /*fin colaboradores*/
@@ -164,14 +164,17 @@ footer {
       color: white;
       font-size: 15px; }
   footer .lado-oscuro {
-    padding: 2%; }
+    padding: 3%;
+    text-align: center; }
     footer .lado-oscuro img {
-      width: 50%;
-      height: 190px; }
+      width: 35%;
+      height: 180px;
+      display: inline-block; }
     footer .lado-oscuro p {
       display: inline-block;
       margin: 2%;
-      color: white; }
+      color: white;
+      font-size: 17px; }
   footer .footer-hr {
     background-color: gray; }
   footer .redes {
