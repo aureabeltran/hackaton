@@ -111,6 +111,108 @@
     color: white;
     font-size: 50px; }
 
+/*css de colaboradores*/
+/* #333333 */
+#colab .auspiciadores {
+  text-align: center; }
+#colab .img-colab {
+  margin: 16%; }
+  #colab .img-colab:hover {
+    margin: 10%; }
+  #colab .img-colab img {
+    width: 100%;
+    height: 10%; }
+#colab .img-colab-lb {
+  margin-top: 10%;
+  margin-left: -20%;
+  padding: 6%; }
+  #colab .img-colab-lb:hover {
+    padding: 0%; }
+  #colab .img-colab-lb img {
+    width: 100%;
+    height: 10%; }
+#colab .img-colab-if {
+  margin-top: 33%;
+  padding: 5%; }
+  #colab .img-colab-if:hover {
+    padding: 0%; }
+  #colab .img-colab-if img {
+    width: 100%;
+    height: 10%; }
+#colab .img-colab-gl {
+  margin-left: 27%;
+  margin-top: -17%;
+  padding: 5%; }
+  #colab .img-colab-gl:hover {
+    padding: 3%; }
+  #colab .img-colab-gl img {
+    width: 50%;
+    height: 10%; }
+
+/*fin colaboradores*/
+/*inicio css footer*/
+footer {
+  background-color: #333333; }
+  footer .nosotros-footer {
+    padding: 10%;
+    margin-top: 10%; }
+    footer .nosotros-footer h4 {
+      color: white;
+      font-size: 25px;
+      margin: 10%; }
+    footer .nosotros-footer .parra {
+      color: white;
+      font-size: 15px; }
+  footer .lado-oscuro {
+    padding: 2%; }
+    footer .lado-oscuro img {
+      width: 50%;
+      height: 190px; }
+    footer .lado-oscuro p {
+      display: inline-block;
+      margin: 2%;
+      color: white; }
+  footer .footer-hr {
+    background-color: gray; }
+  footer .redes {
+    text-align: center; }
+    footer .redes .face {
+      display: inline-block;
+      margin: 2%;
+      font-size: 24px;
+      color: #F7F4F4;
+      padding: 5px; }
+      footer .redes .face:hover {
+        font-weight: bold;
+        color: #004cb9; }
+    footer .redes .twitter {
+      display: inline-block;
+      margin: 2%;
+      font-size: 24px;
+      color: #F7F4F4;
+      padding: 5px; }
+      footer .redes .twitter:hover {
+        font-weight: bold;
+        color: #55b1dd; }
+    footer .redes .insta {
+      display: inline-block;
+      margin: 2%;
+      font-size: 24px;
+      color: #F7F4F4;
+      padding: 5px; }
+      footer .redes .insta:hover {
+        font-weight: bold;
+        color: #b35d8c; }
+    footer .redes .in {
+      display: inline-block;
+      margin: 2%;
+      font-size: 24px;
+      color: #F7F4F4;
+      padding: 5px; }
+      footer .redes .in:hover {
+        font-weight: bold;
+        color: #4190de; }
+
 .fondo-fixed {
   background-attachment: fixed;
   background-repeat: no-repeat;
