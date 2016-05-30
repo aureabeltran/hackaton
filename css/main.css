@@ -1,3 +1,71 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto|Oswald|Open+Sans);
+#banner {
+  background-image: url(../images/banner-temporal.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  color: white;
+  position: relative; }
+  #banner::before {
+    background-color: rgba(0, 0, 0, 0.57);
+    width: 100%;
+    height: 500px;
+    content: '';
+    display: block;
+    position: absolute; }
+  #banner .text-center {
+    padding: 10%; }
+    #banner .text-center h1 {
+      font-size: 70px;
+      font-weight: 300;
+      color: #f9a91a; }
+    #banner .text-center h3 {
+      font-size: 30px; }
+
+#info .text-center {
+  padding: 5% 15%; }
+  #info .text-center h1 {
+    font-size: 45px;
+    font-weight: 300; }
+#info .logos {
+  text-align: center; }
+  #info .logos .hover {
+    padding: 5% 10%; }
+    #info .logos .hover img {
+      width: 150px;
+      margin: 2% 0%;
+      margin: 20px;
+      border: 5px solid #eee;
+      -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+      -webkit-transition: all 1s ease-out;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+    #info .logos .hover:hover {
+      background-color: #fde1af; }
+      #info .logos .hover:hover img {
+        -webkit-transform: rotate(-360deg);
+            -moz-transform: rotate(-360deg);
+            -o-transform: rotate(-360deg); }
+#info .datos img {
+  width: 70%;
+  height: auto;
+  border: 2px solid #f9a91a; }
+
+.fondo-fixed {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+hr {
+  width: 30%;
+  height: 3px;
+  background-color: #f9a91a; }
+
+p {
+  font-family: roboto; }
 
 /*# sourceMappingURL=main.css.map */
