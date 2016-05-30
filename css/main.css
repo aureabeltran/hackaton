@@ -1,3 +1,32 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto|Oswald|Open+Sans);
+#horario .col-md-4 div, #horario .col-xs-4 div, #horario .col-lg-4 div {
+  background-color: #F7F4F4; }
+#horario .col-md-4 h3, #horario .col-xs-4 h3, #horario .col-lg-4 h3 {
+  margin-top: 0; }
+#horario .col-md-4 h4, #horario .col-xs-4 h4, #horario .col-lg-4 h4 {
+  color: #f9a91a;
+  font-weight: bold; }
+#horario span.glyphicon-time {
+  color: #f9a91a;
+  font-size: 50px; }
+#horario .rotate {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+  overflow: hidden; }
+#horario .rotate:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg); }
+
+.fondo-fixed {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center; }
 
 /*# sourceMappingURL=main.css.map */

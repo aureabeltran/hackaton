@@ -12,3 +12,7 @@
 		background-color: darken($color-boton, 15%);
 	}
 }
+
+@mixin bg-gris($bg) {
+	background-color: $bg;
+}
