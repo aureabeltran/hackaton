@@ -16,13 +16,16 @@
     display: block;
     position: absolute; }
   #banner .text-center {
-    padding: 10%; }
+    padding: 5%; }
     #banner .text-center h1 {
       font-size: 70px;
       font-weight: 300;
       color: #f9a91a; }
     #banner .text-center h3 {
       font-size: 30px; }
+
+#countdown {
+  padding: 5% 0%; }
 
 #info .text-center {
   padding: 5% 15%; }
