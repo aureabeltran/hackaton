@@ -72,3 +72,63 @@
 		}
 	}
 }
+
+/*expositores*/
+#expositores {
+	img:hover {@include hover-expositores;}
+	.fa {
+		color: $white;
+		background-color: $bg-icons;
+		padding: 1%;
+		font-size: 25px;
+	}
+	// dl {
+	// 	min-height: 60%;
+	// }
+
+}
+/*seccion de planificacion*/
+#horario {
+	
+.col-md-4, .col-xs-4, .col-lg-4 {
+	div.gr {
+		@include bg-gris($gris);
+		border: 1px solid $main-yellow;
+		.rotate{
+			-webkit-transition-duration: 0.8s;
+			-moz-transition-duration: 0.8s;
+			-o-transition-duration: 0.8s;
+			transition-duration: 0.8s;
+
+			-webkit-transition-property: -webkit-transform;
+			-moz-transition-property: -moz-transform;
+			-o-transition-property: -o-transform;
+			transition-property: transform;
+
+			overflow:hidden;
+		}
+		&:hover{
+			.rotate{
+			-webkit-transform:rotate(360deg);
+			-moz-transform:rotate(360deg);
+			-o-transform:rotate(360deg);
+			}
+		}
+		
+	}
+	h3 {margin-top: 0;}
+	h4 {color: $main-yellow; font-weight: bold;}
+	p {padding: 2%;}
+}
+
+
+	div.bg-yw {
+		background-color: $main-yellow;
+		width: 100%;
+		span.glyphicon-time {
+			padding: 2%;
+			color: white;
+			font-size: 50px;}
+	}
+}
+
