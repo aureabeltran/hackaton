@@ -49,3 +49,12 @@
 		color: $colores;
 	}
 }
+@mixin contacto-hover($colores){
+	font-size: 35px;
+	color: $colores;
+	margin-left: 5%;
+	&:hover {
+		@include hover-expositores;
+		color: $colores;
+	}
+}

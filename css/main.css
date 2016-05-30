@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto|Oswald|Open+Sans);
 /*section expositores*/
 /* hover-expositores */
+/*section expositores*/
 #banner {
   background-image: url(../images/banner-temporal.jpg);
   background-size: cover;
@@ -53,8 +54,8 @@
       background-color: #fde1af; }
       #info .logos .hover:hover img {
         -webkit-transform: rotate(-360deg);
-            -moz-transform: rotate(-360deg);
-            -o-transform: rotate(-360deg); }
+        ┬á┬á┬á┬á-moz-transform: rotate(-360deg);
+        ┬á┬á┬á┬á-o-transform: rotate(-360deg); }
 #info .datos img {
   width: 70%;
   height: auto;
@@ -73,11 +74,25 @@
   -ms-transform: rotateY(-360deg);
   transform: rotateY(-360deg); }
 #expositores .fa {
-  color: #ffffff;
-  background-color: #D49716;
-  padding: 1%;
+  color: #f9a91a;
   font-size: 25px; }
+  #expositores .fa:hover {
+    -moz-transition: all 2.3s ease-in-out;
+    -webkit-transition: all 2.3s ease-in-out;
+    -o-transition: all 2.3s ease-in-out;
+    -ms-transition: all 2.3s ease-in-out;
+    transition: all 2.3s ease-in-out;
+    -moz-transform: rotateY(-360deg);
+    -webkit-transform: rotateY(-360deg);
+    o-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg); }
+#expositores .fa-linkedin-square:hover {
+  color: #225F94; }
+#expositores .fa-link:hover {
+  color: black; }
 
+/*fin expositores*/
 /*seccion de planificacion*/
 #horario .col-md-4 div.gr, #horario .col-xs-4 div.gr, #horario .col-lg-4 div.gr {
   background-color: #F7F4F4;
@@ -215,6 +230,34 @@ footer {
       footer .redes .in:hover {
         font-weight: bold;
         color: #4190de; }
+
+/*inicio section contacto y mapa*/
+#contacto p {
+  margin-top: 10%;
+  font-size: 40px;
+  font-style: italic; }
+#contacto .fa {
+  font-size: 35px;
+  color: grey;
+  margin-left: 5%; }
+  #contacto .fa:hover {
+    -moz-transition: all 2.3s ease-in-out;
+    -webkit-transition: all 2.3s ease-in-out;
+    -o-transition: all 2.3s ease-in-out;
+    -ms-transition: all 2.3s ease-in-out;
+    transition: all 2.3s ease-in-out;
+    -moz-transform: rotateY(-360deg);
+    -webkit-transform: rotateY(-360deg);
+    o-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+    color: grey; }
+  #contacto .fa.fa-facebook:hover {
+    color: #225F94; }
+  #contacto .fa.fa-twitter:hover {
+    color: #55b1dd; }
+  #contacto .fa.fa-linkedin:hover {
+    color: #225F94; }
 
 .fondo-fixed {
   background-attachment: fixed;

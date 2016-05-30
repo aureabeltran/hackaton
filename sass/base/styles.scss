@@ -1,3 +1,4 @@
+@import "../helpers/_variables.scss";
 //banner//
 #banner{
 	background-image: url(../images/banner-temporal.jpg);
@@ -77,16 +78,14 @@
 #expositores {
 	img:hover {@include hover-expositores;}
 	.fa {
-		color: $white;
-		background-color: $bg-icons;
-		padding: 1%;
+		color: $main-yellow;
 		font-size: 25px;
+		&:hover {@include hover-expositores;}
 	}
-	// dl {
-	// 	min-height: 60%;
-	// }
-
+	.fa-linkedin-square:hover {color: $azul-icon;}
+	.fa-link:hover {color:$black-icon;}
 }
+/*fin expositores*/ 
 /*seccion de planificacion*/
 #horario {
 	
@@ -233,5 +232,19 @@ footer{
 			@include lado;
 			@include colores-iconos (#4190de);
 		}
+	}
+}
+/*inicio section contacto y mapa*/ 
+#contacto {
+	p {
+		margin-top:10%;
+		font-size: 40px;
+		font-style: italic;
+	}
+	.fa {
+		@include contacto-hover(grey);
+		&.fa-facebook:hover {color:$azul-icon;}
+		&.fa-twitter:hover {color:#55b1dd}
+		&.fa-linkedin:hover {color: #225F94;}
 	}
 }
