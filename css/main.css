@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Roboto|Oswald|Open+Sans);
+/*section expositores*/
+/* hover-expositores */
 /*seccion de planificacion*/
 #horario .col-md-4 div.gr, #horario .col-xs-4 div.gr, #horario .col-lg-4 div.gr {
   background-color: #F7F4F4;
@@ -87,6 +89,24 @@
   width: 70%;
   height: auto;
   border: 2px solid #f9a91a; }
+
+/*expositores*/
+#expositores img:hover {
+  -moz-transition: all 2.3s ease-in-out;
+  -webkit-transition: all 2.3s ease-in-out;
+  -o-transition: all 2.3s ease-in-out;
+  -ms-transition: all 2.3s ease-in-out;
+  transition: all 2.3s ease-in-out;
+  -moz-transform: rotateY(-360deg);
+  -webkit-transform: rotateY(-360deg);
+  -o-transform: rotateY(-360deg);
+  -ms-transform: rotateY(-360deg);
+  transform: rotateY(-360deg); }
+#expositores .fa {
+  color: #ffffff;
+  background-color: #D49716;
+  padding: 1%;
+  font-size: 25px; }
 
 .fondo-fixed {
   background-attachment: fixed;

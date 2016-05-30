@@ -1,3 +1,4 @@
+
 /*seccion de planificacion*/
 #horario {
 	
@@ -115,3 +116,19 @@
 		}
 	}
 }
+
+/*expositores*/
+#expositores {
+	img:hover {@include hover-expositores;}
+	.fa {
+		color: $white;
+		background-color: $bg-icons;
+		padding: 1%;
+		font-size: 25px;
+	}
+	// dl {
+	// 	min-height: 60%;
+	// }
+
+}
+
