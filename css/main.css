@@ -99,7 +99,7 @@
   transition: all 2.3s ease-in-out;
   -moz-transform: rotateY(-360deg);
   -webkit-transform: rotateY(-360deg);
-  -o-transform: rotateY(-360deg);
+  o-transform: rotateY(-360deg);
   -ms-transform: rotateY(-360deg);
   transform: rotateY(-360deg); }
 #expositores .fa {
@@ -107,6 +107,60 @@
   background-color: #D49716;
   padding: 1%;
   font-size: 25px; }
+
+/*barra*/
+span.yw {
+  color: #f9a91a; }
+
+#nav {
+  width: 100%;
+  position: static;
+  top: -32px;
+  height: 100px;
+  padding-bottom: 60px; }
+
+#nav.affix {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  -webkit-transition: all .6s ease-in-out; }
+
+@media (min-width: 767px) {
+  .navbar-nav.nav-justified > li {
+    float: none; } }
+.navbar-nav {
+  margin: 1px 1px; }
+
+/* customize nav style */
+.navbar-custom {
+  background-color: #efefef;
+  text-transform: uppercase;
+  border-width: 0; }
+
+.navbar-custom .navbar-nav li > a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a {
+  background-color: #efefef;
+  color: #f9a91a;
+  font-weight: bold;
+  border-bottom: 3px solid #f9a91a; }
+
+.navbar-custom .dropdown-menu {
+  right: 0; }
+
+.navbar-collapse.in {
+  /*3.0.2 bug workaround*/
+  overflow-y: visible; }
+
+.navbar-toggle {
+  outline: 0; }
+
+header {
+  background-color: #333333; }
+  header a {
+    text-decoration: none;
+    color: white; }
+
+nav.navbar {
+  margin-bottom: 0; }
 
 .fondo-fixed {
   background-attachment: fixed;
@@ -120,5 +174,8 @@ hr {
 
 p {
   font-family: roboto; }
+
+li {
+  list-style: none; }
 
 /*# sourceMappingURL=main.css.map */

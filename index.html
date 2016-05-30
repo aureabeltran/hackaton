@@ -8,11 +8,28 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="css/main.css">
+	        <script type="text/javascript">
+            $(document).ready(function () {
+                //scroll();
+            });
+        </script>
 </head>
 <body>
 	<!--barra-->
 	<header>
-		
+         <nav  class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html"><img src="images/nav-logo.png" style="height: 50px;"/></a>
+                 </div>
+                 <div class="derecha collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right color-blanco">
+                        <li><a href="#contacto"><span class="yw">Inscribete</span></a></li>
+                        <li><a href="www.laboratoria.cl">Laboratoria.cl</a></li>
+                    </ul>
+                </div>
+        	</div>
+        </nav>
 	</header>
 	<!--background-->
 	<section id="banner" class="fondo-fixed bg-banner">
@@ -84,7 +101,27 @@
 						</p>
 						<img src="images/img_1.jpg" alt="">
 					</div>
-				</section>
+	</section>
+		 <div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
+                <div class="container">
+                    <div class="navbar-header">
+                        <div class="logo">
+                            <a href="#"><img src="images/nav-logo.png" style="height: 80px;"/></a>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right padding-navbar">
+                            <li>  </li>
+                            <li><a class="a-nav-heigth" href="#info">Laboratoria</a></li>
+                            <li><a class="a-nav-heigth" href="#expositores">Expositores</a></li>
+                            <li><a class="a-nav-heigth" href="#horario">Planificación</a></li>
+                            <li><a class="a-nav-heigth" href="#contacto">Ubicación</a></li>
+                            <li><a class="a-nav-heigth" href="#colab">Colaboradores</a></li>
+                            
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!--/.container -->
+            </div><!--/.navbar -->
 
 	<!-- section expositores -->
 	<section id="expositores">
@@ -300,5 +337,83 @@
 	    $(".menu a").smoothscrolling();
 	  })
   </script>
+
+  <!--Script nav-->
+   <script type="text/javascript" >
+            $(document).ready(function () {
+                /* affix the navbar after scroll below header */
+                $('#nav').hide();
+
+                $(document).scroll(function () {
+                    var y = $(this).scrollTop();
+                    if (y > $('header').height() - $('#nav').height()) {
+                        $('#nav').show();
+                    } else {
+                        $('#nav').hide();
+                    }
+                });
+
+                $('#nav').affix({
+                    offset: {
+                        top: $('header').height() - $('#nav').height()
+                    }
+                });
+
+                /* highlight the top nav as scrolling occurs */
+                $('body').scrollspy({target: '#nav'});
+                
+
+                /* smooth scrolling for scroll to top */
+                $('.scroll-top').click(function () {
+                    $('body,html').animate({scrollTop: 0}, 1000);
+                });
+
+                /* smooth scrolling for nav sections */
+                $('#nav .navbar-nav li>a').click(function () {
+
+                    var link = $(this).attr('href');
+                    var posi = $(link).offset().top + 20;
+                    $('body,html').animate({scrollTop: posi}, 700);
+
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function () {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+
+                $(window).scroll(function () {
+                    $(".slideanim").each(function () {
+                        var pos = $(this).offset().top;
+
+                        var winTop = $(window).scrollTop();
+                        if (pos < winTop + 600) {
+                            $(this).addClass("slide");
+                        }
+                    });
+                });
+            })
+        </script>
 </body>
 </html>
