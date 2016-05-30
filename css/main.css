@@ -232,32 +232,40 @@ footer {
         color: #4190de; }
 
 /*inicio section contacto y mapa*/
-#contacto p {
-  margin-top: 10%;
-  font-size: 40px;
-  font-style: italic; }
-#contacto .fa {
-  font-size: 35px;
-  color: grey;
-  margin-left: 5%; }
-  #contacto .fa:hover {
-    -moz-transition: all 2.3s ease-in-out;
-    -webkit-transition: all 2.3s ease-in-out;
-    -o-transition: all 2.3s ease-in-out;
-    -ms-transition: all 2.3s ease-in-out;
-    transition: all 2.3s ease-in-out;
-    -moz-transform: rotateY(-360deg);
-    -webkit-transform: rotateY(-360deg);
-    o-transform: rotateY(-360deg);
-    -ms-transform: rotateY(-360deg);
-    transform: rotateY(-360deg);
-    color: grey; }
-  #contacto .fa.fa-facebook:hover {
-    color: #225F94; }
-  #contacto .fa.fa-twitter:hover {
-    color: #55b1dd; }
-  #contacto .fa.fa-linkedin:hover {
-    color: #225F94; }
+#contacto {
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-image: url(../images/comacluster_rowe_big.jpg);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4% 0%; }
+  #contacto p {
+    margin-top: 10%;
+    font-size: 40px;
+    font-style: italic; }
+  #contacto .fa {
+    font-size: 35px;
+    color: white;
+    margin-left: 5%; }
+    #contacto .fa:hover {
+      -moz-transition: all 2.3s ease-in-out;
+      -webkit-transition: all 2.3s ease-in-out;
+      -o-transition: all 2.3s ease-in-out;
+      -ms-transition: all 2.3s ease-in-out;
+      transition: all 2.3s ease-in-out;
+      -moz-transform: rotateY(-360deg);
+      -webkit-transform: rotateY(-360deg);
+      o-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+      color: white; }
+    #contacto .fa.fa-facebook:hover {
+      color: #225F94; }
+    #contacto .fa.fa-twitter:hover {
+      color: #55b1dd; }
+    #contacto .fa.fa-linkedin:hover {
+      color: #225F94; }
 
 .fondo-fixed {
   background-attachment: fixed;

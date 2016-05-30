@@ -58,3 +58,9 @@
 		color: $colores;
 	}
 }
+@mixin bg-image {
+	background-size: cover;
+	width:100%;
+	text-align: center;
+	color: white;;
+}

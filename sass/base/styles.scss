@@ -236,15 +236,19 @@ footer{
 }
 /*inicio section contacto y mapa*/ 
 #contacto {
+	@include bg-image;
+	background-image: url(../images/comacluster_rowe_big.jpg);
+	background-color: $bg-section;
+	padding: 4% 0%;
 	p {
 		margin-top:10%;
 		font-size: 40px;
 		font-style: italic;
 	}
 	.fa {
-		@include contacto-hover(grey);
+		@include contacto-hover(white);
 		&.fa-facebook:hover {color:$azul-icon;}
 		&.fa-twitter:hover {color:#55b1dd}
-		&.fa-linkedin:hover {color: #225F94;}
+		&.fa-linkedin:hover {color: $azul-icon;}
 	}
 }
