@@ -1,12 +1,15 @@
 //**Esto es para botones simples*//
 
-@mixin botones-simples($ancho, $color-boton, $margin){
+@mixin botones-simples($ancho, $color-boton, $margin, $border-r){
 	width: $ancho;
 	background-color: $color-boton;
 	margin: $margin;
 	color: white;
 	padding: 5px;
 	font-weight: bold;
+	font-size: 18px;
+	border: $color-boton;
+	border-radius: $border-r;
 	&:hover{
 		font-weight: bold;
 		background-color: darken($color-boton, 15%);
@@ -48,4 +51,19 @@
 		font-weight: bold;
 		color: $colores;
 	}
+}
+@mixin contacto-hover($colores){
+	font-size: 35px;
+	color: $colores;
+	padding: 15px;
+	&:hover {
+		@include hover-expositores;
+		color: $colores;
+	}
+}
+@mixin bg-image {
+	background-size: cover;
+	width:100%;
+	text-align: center;
+	color: white;;
 }

@@ -47,13 +47,13 @@ nav.navbar {margin-bottom: 0;}
 				width: 150px;
 				margin: 2% 0%;
 				margin: 20px;
-			    border: 5px solid #eee;
-			    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-			    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-			    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
-			    -webkit-transition: all 1s ease-out;
-			    -moz-transition: all 1s ease;
-			    -o-transition: all 1s ease;
+		    border: 5px solid #eee;
+		    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+		    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+		    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+		    -webkit-transition: all 1s ease-out;
+		    -moz-transition: all 1s ease;
+		    -o-transition: all 1s ease;
 			}
 			&:hover{
 				background-color: lighten($main-yellow, 30%);
@@ -78,10 +78,9 @@ nav.navbar {margin-bottom: 0;}
 #expositores {
 	img:hover {@include hover-expositores;}
 	.fa {
-		color: $white;
-		background-color: $bg-icons;
-		padding: 1%;
+		color: $main-yellow;
 		font-size: 25px;
+		&:hover {@include hover-expositores;}
 	}
 }
 
@@ -93,7 +92,7 @@ span.yw {color: $main-yellow;}
     width: 100%;
     position:static;
     top:-32px;
-    height: 80px;
+    height: 58px;
     padding-bottom: 60px
 }
 
@@ -118,9 +117,6 @@ span.yw {color: $main-yellow;}
     background-color: #efefef;
     text-transform:uppercase;
     border-width:0;
-}
-.navbar-custom  .navbar-nav>li>a {
-
 }
 .navbar-custom  .navbar-nav li>a:hover, .navbar-nav li .open, .navbar-custom .navbar-nav .active a  {
 
@@ -150,9 +146,12 @@ header {
 	
 	a {text-decoration: none; color: white;}
 }
+	.fa-linkedin-square:hover {color: $azul-icon;}
+	.fa-link:hover {color:$black-icon;}
+/*fin expositores*/ 
 /*seccion de planificacion*/
 #horario {
-	
+	padding: 2% 0%;
 .col-md-4, .col-xs-4, .col-lg-4 {
 	div.gr {
 		@include bg-gris($gris);
@@ -192,10 +191,42 @@ header {
 			font-size: 50px;}
 	}
 }
-
+/*inicio section contacto y mapa*/ 
+#contacto {
+	@include bg-image;
+	background-image: url(../images/comacluster_rowe_big.jpg);
+	width:100%;
+	height: 600px;
+	text-align: center;
+	color: white;
+	position: relative;
+	&::before{
+	   background-color: rgba(0, 0, 0,0.57); 
+	   width: 100%;
+	   height: 600px;
+	   content: '';
+  		display: block;
+	   position: absolute;
+	}
+	p {
+		margin-top:10%;
+		font-size: 40px;
+		font-style: italic;
+	}
+	.button-i{
+		@include botones-simples(30%, $main-yellow, 10px, 5px);
+	}
+	.fa {
+		@include contacto-hover(white);
+		&.fa-facebook:hover {color:$azul-icon;}
+		&.fa-twitter:hover {color:#55b1dd}
+		&.fa-linkedin:hover {color: $azul-icon;}
+	}
+}
 /*css de colaboradores*/
 /* #333333 */
 #colab{
+	padding: 2% 0%;
 	.auspiciadores{
 		text-align: center;
 	}
@@ -214,17 +245,18 @@ header {
 		padding: 5%;
 	    &:hover{
 			padding: 0%;
+			margin-bottom:6%;
 		}
 		img{
 			@include imag-colab;
 		}
 	}
 	.img-colab-if{
-		margin-bottom: 12%;
+			margin-bottom: 12%;
     	padding: 7%;
 		&:hover{
 			padding: 4%;
-			margin-bottom: 12%;
+			margin-bottom: 17%;
 		}
 		img{
 			@include imag-colab;

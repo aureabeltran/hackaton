@@ -76,10 +76,19 @@ nav.navbar {
   -ms-transform: rotateY(-360deg);
   transform: rotateY(-360deg); }
 #expositores .fa {
-  color: #ffffff;
-  background-color: #D49716;
-  padding: 1%;
+  color: #f9a91a;
   font-size: 25px; }
+  #expositores .fa:hover {
+    -moz-transition: all 2.3s ease-in-out;
+    -webkit-transition: all 2.3s ease-in-out;
+    -o-transition: all 2.3s ease-in-out;
+    -ms-transition: all 2.3s ease-in-out;
+    transition: all 2.3s ease-in-out;
+    -moz-transform: rotateY(-360deg);
+    -webkit-transform: rotateY(-360deg);
+    o-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg); }
 
 /*barra*/
 span.yw {
@@ -89,7 +98,7 @@ span.yw {
   width: 100%;
   position: static;
   top: -32px;
-  height: 80px;
+  height: 58px;
   padding-bottom: 60px; }
 
 #nav.affix {
@@ -132,76 +141,147 @@ header {
     text-decoration: none;
     color: white; }
 
+.fa-linkedin-square:hover {
+  color: #225F94; }
+
+.fa-link:hover {
+  color: black; }
+
+/*fin expositores*/
 /*seccion de planificacion*/
-#horario .col-md-4 div.gr, #horario .col-xs-4 div.gr, #horario .col-lg-4 div.gr {
-  background-color: #F7F4F4;
-  border: 1px solid #f9a91a; }
-  #horario .col-md-4 div.gr .rotate, #horario .col-xs-4 div.gr .rotate, #horario .col-lg-4 div.gr .rotate {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-    overflow: hidden; }
-  #horario .col-md-4 div.gr:hover .rotate, #horario .col-xs-4 div.gr:hover .rotate, #horario .col-lg-4 div.gr:hover .rotate {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg); }
-#horario .col-md-4 h3, #horario .col-xs-4 h3, #horario .col-lg-4 h3 {
-  margin-top: 0; }
-#horario .col-md-4 h4, #horario .col-xs-4 h4, #horario .col-lg-4 h4 {
-  color: #f9a91a;
-  font-weight: bold; }
-#horario .col-md-4 p, #horario .col-xs-4 p, #horario .col-lg-4 p {
-  padding: 2%; }
-#horario div.bg-yw {
-  background-color: #f9a91a;
-  width: 100%; }
-  #horario div.bg-yw span.glyphicon-time {
-    padding: 2%;
+#horario {
+  padding: 2% 0%; }
+  #horario .col-md-4 div.gr, #horario .col-xs-4 div.gr, #horario .col-lg-4 div.gr {
+    background-color: #F7F4F4;
+    border: 1px solid #f9a91a; }
+    #horario .col-md-4 div.gr .rotate, #horario .col-xs-4 div.gr .rotate, #horario .col-lg-4 div.gr .rotate {
+      -webkit-transition-duration: 0.8s;
+      -moz-transition-duration: 0.8s;
+      -o-transition-duration: 0.8s;
+      transition-duration: 0.8s;
+      -webkit-transition-property: -webkit-transform;
+      -moz-transition-property: -moz-transform;
+      -o-transition-property: -o-transform;
+      transition-property: transform;
+      overflow: hidden; }
+    #horario .col-md-4 div.gr:hover .rotate, #horario .col-xs-4 div.gr:hover .rotate, #horario .col-lg-4 div.gr:hover .rotate {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg); }
+  #horario .col-md-4 h3, #horario .col-xs-4 h3, #horario .col-lg-4 h3 {
+    margin-top: 0; }
+  #horario .col-md-4 h4, #horario .col-xs-4 h4, #horario .col-lg-4 h4 {
+    color: #f9a91a;
+    font-weight: bold; }
+  #horario .col-md-4 p, #horario .col-xs-4 p, #horario .col-lg-4 p {
+    padding: 2%; }
+  #horario div.bg-yw {
+    background-color: #f9a91a;
+    width: 100%; }
+    #horario div.bg-yw span.glyphicon-time {
+      padding: 2%;
+      color: white;
+      font-size: 50px; }
+
+/*inicio section contacto y mapa*/
+#contacto {
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-image: url(../images/comacluster_rowe_big.jpg);
+  width: 100%;
+  height: 600px;
+  text-align: center;
+  color: white;
+  position: relative; }
+  #contacto::before {
+    background-color: rgba(0, 0, 0, 0.57);
+    width: 100%;
+    height: 600px;
+    content: '';
+    display: block;
+    position: absolute; }
+  #contacto p {
+    margin-top: 10%;
+    font-size: 40px;
+    font-style: italic; }
+  #contacto .button-i {
+    width: 30%;
+    background-color: #f9a91a;
+    margin: 10px;
     color: white;
-    font-size: 50px; }
+    padding: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    border: #f9a91a;
+    border-radius: 5px; }
+    #contacto .button-i:hover {
+      font-weight: bold;
+      background-color: #c17e05; }
+  #contacto .fa {
+    font-size: 35px;
+    color: white;
+    padding: 15px; }
+    #contacto .fa:hover {
+      -moz-transition: all 2.3s ease-in-out;
+      -webkit-transition: all 2.3s ease-in-out;
+      -o-transition: all 2.3s ease-in-out;
+      -ms-transition: all 2.3s ease-in-out;
+      transition: all 2.3s ease-in-out;
+      -moz-transform: rotateY(-360deg);
+      -webkit-transform: rotateY(-360deg);
+      o-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+      color: white; }
+    #contacto .fa.fa-facebook:hover {
+      color: #225F94; }
+    #contacto .fa.fa-twitter:hover {
+      color: #55b1dd; }
+    #contacto .fa.fa-linkedin:hover {
+      color: #225F94; }
 
 /*css de colaboradores*/
 /* #333333 */
-#colab .auspiciadores {
-  text-align: center; }
-#colab .img-colab {
-  margin-top: 40%;
-  padding: 5%; }
-  #colab .img-colab:hover {
-    padding: 0%; }
-  #colab .img-colab img {
-    width: 100%;
-    height: 10%; }
-#colab .img-colab-lb {
-  margin-top: 5%;
-  padding: 5%; }
-  #colab .img-colab-lb:hover {
-    padding: 0%; }
-  #colab .img-colab-lb img {
-    width: 100%;
-    height: 10%; }
-#colab .img-colab-if {
-  margin-bottom: 12%;
-  padding: 7%; }
-  #colab .img-colab-if:hover {
-    padding: 4%;
-    margin-bottom: 12%; }
-  #colab .img-colab-if img {
-    width: 100%;
-    height: 10%; }
-#colab .img-colab-gl {
-  margin-top: 70%;
-  padding: 2%; }
-  #colab .img-colab-gl:hover {
-    padding: 0%; }
-  #colab .img-colab-gl img {
-    width: 100%;
-    height: 10%; }
+#colab {
+  padding: 2% 0%; }
+  #colab .auspiciadores {
+    text-align: center; }
+  #colab .img-colab {
+    margin-top: 40%;
+    padding: 5%; }
+    #colab .img-colab:hover {
+      padding: 0%; }
+    #colab .img-colab img {
+      width: 100%;
+      height: 10%; }
+  #colab .img-colab-lb {
+    margin-top: 5%;
+    padding: 5%; }
+    #colab .img-colab-lb:hover {
+      padding: 0%;
+      margin-bottom: 6%; }
+    #colab .img-colab-lb img {
+      width: 100%;
+      height: 10%; }
+  #colab .img-colab-if {
+    margin-bottom: 12%;
+    padding: 7%; }
+    #colab .img-colab-if:hover {
+      padding: 4%;
+      margin-bottom: 17%; }
+    #colab .img-colab-if img {
+      width: 100%;
+      height: 10%; }
+  #colab .img-colab-gl {
+    margin-top: 70%;
+    padding: 2%; }
+    #colab .img-colab-gl:hover {
+      padding: 0%; }
+    #colab .img-colab-gl img {
+      width: 100%;
+      height: 10%; }
 
 /*fin colaboradores*/
 /*inicio css footer*/
@@ -280,7 +360,7 @@ hr {
   height: 3px;
   background-color: #f9a91a; }
 
-p {
+* {
   font-family: roboto; }
 
 li {
