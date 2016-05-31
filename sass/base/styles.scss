@@ -26,6 +26,9 @@ nav.navbar {margin-bottom: 0;}
 		h3{
 			font-size: 30px;
 		}
+		.button-i{
+			@include botones-simples(100%, $main-yellow, 10px, 5px);
+		}
 	}
 }
 #countdown{

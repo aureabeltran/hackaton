@@ -28,6 +28,19 @@ nav.navbar {
       color: #f9a91a; }
     #banner .text-center h3 {
       font-size: 30px; }
+    #banner .text-center .button-i {
+      width: 100%;
+      background-color: #f9a91a;
+      margin: 10px;
+      color: white;
+      padding: 5px;
+      font-weight: bold;
+      font-size: 18px;
+      border: #f9a91a;
+      border-radius: 5px; }
+      #banner .text-center .button-i:hover {
+        font-weight: bold;
+        background-color: #c17e05; }
 
 #countdown {
   padding: 5% 0%; }
