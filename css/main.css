@@ -349,6 +349,15 @@ footer {
         font-weight: bold;
         color: #4190de; }
 
+/*arrow*/
+.fa-arrow-circle-up {
+  font-size: 60px;
+  color: #da8e06;
+  position: fixed;
+  z-index: 1001;
+  bottom: 0;
+  right: 0; }
+
 .fondo-fixed {
   background-attachment: fixed;
   background-repeat: no-repeat;
