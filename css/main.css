@@ -58,10 +58,15 @@ nav.navbar {
         -webkit-transform: rotate(-360deg);
             -moz-transform: rotate(-360deg);
             -o-transform: rotate(-360deg); }
-#info .datos img {
-  width: 70%;
-  height: auto;
-  border: 2px solid #f9a91a; }
+
+#datos {
+  background-color: #fab233;
+  color: #ffffff; }
+  #datos .text-center {
+    padding: 5% 15%; }
+    #datos .text-center h1 {
+      font-size: 45px;
+      font-weight: 300; }
 
 /*expositores*/
 #expositores img:hover {
@@ -107,9 +112,6 @@ span.yw {
   z-index: 10;
   -webkit-transition: all .6s ease-in-out; }
 
-@media (min-width: 767px) {
-  .navbar-nav.nav-justified > li {
-    float: none; } }
 .navbar-nav {
   margin: 1px 1px; }
 
@@ -127,10 +129,6 @@ span.yw {
 
 .navbar-custom .dropdown-menu {
   right: 0; }
-
-.navbar-collapse.in {
-  /*3.0.2 bug workaround*/
-  overflow-y: visible; }
 
 .navbar-toggle {
   outline: 0; }
@@ -153,7 +151,8 @@ header {
   padding: 2% 0%; }
   #horario .col-md-4 div.gr, #horario .col-xs-4 div.gr, #horario .col-lg-4 div.gr {
     background-color: #F7F4F4;
-    border: 1px solid #f9a91a; }
+    border: 1px solid #f9a91a;
+    margin-bottom: 8%; }
     #horario .col-md-4 div.gr .rotate, #horario .col-xs-4 div.gr .rotate, #horario .col-lg-4 div.gr .rotate {
       -webkit-transition-duration: 0.8s;
       -moz-transition-duration: 0.8s;
@@ -356,14 +355,32 @@ footer {
   background-position: center center; }
 
 hr {
-  width: 30%;
+  width: 20%;
   height: 3px;
   background-color: #f9a91a; }
 
 * {
   font-family: roboto; }
+  * h1 {
+    text-transform: uppercase; }
+  * p {
+    font-size: 18px; }
 
 li {
   list-style: none; }
+
+@media (max-width: 768px) {
+  #nav {
+    display: none; }
+
+  header, #colab {
+    display: none; }
+
+  #contacto {
+    height: 800px; }
+    #contacto p {
+      margin-top: 2%; }
+    #contacto iframe {
+      height: 200px; } }
 
 /*# sourceMappingURL=main.css.map */

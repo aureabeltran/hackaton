@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+	#nav {display: none;}
+	header, #colab{
+		display: none;
+	}
+	#contacto{
+		height: 800px;
+		p{
+			margin-top: 2%;
+		}
+		iframe{
+			height: 200px;
+		}
+	}
+}
