@@ -325,3 +325,13 @@ footer{
 		}
 	}
 }
+
+/*arrow*/
+
+.fa-arrow-circle-up {
+	font-size: 60px; 
+	color: darken($main-yellow, 10%);
+position: fixed;
+z-index: 1001;
+bottom: 0;
+right: 0;}
